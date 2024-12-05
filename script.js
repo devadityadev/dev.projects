@@ -9,8 +9,8 @@ function cancel(){
 // Typewriter Effect
 const texts = [
     "DEVELOPER",
-    "security",
-    "sheild" 
+    "DESIGNER",
+    "YOUTUBER"
 ]
 let speed  =100;
 const textElements = document.querySelector(".typewriter-text");
@@ -35,21 +35,6 @@ function eraseText(){
         textIndex = (textIndex + 1) % texts.length;
         charcterIndex = 0;
         setTimeout(typeWriter, 500)
-    }function showBlackScreen() {
-    const overlay = document.createElement("div");
-    overlay.id = "neon-overlay";
-    overlay.innerHTML = `
-        <div class="neon-text">Welcome to Neon Mode</div>
-    `;
-    document.body.appendChild(overlay);
-    overlay.style.display = "flex";
-
-    // Close the overlay when clicked
-    overlay.addEventListener("click", () => {
-        overlay.style.display = "none";
-        document.body.removeChild(overlay);
-    });
-}
-
+    }
 }
 window.onload = typeWriter
