@@ -237,37 +237,4 @@ section{
     .main-container button{
         margin-top: 15px;
     }
-    /* Full-screen black overlay */
-#neon-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-/* Neon green effect */
-.neon-text {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #077b32;
-    text-shadow: 0 0 10px #077b32, 0 0 20px #077b32, 0 0 30px #077b32, 0 0 40px #077b32;
-    animation: neon-flicker 1.5s infinite;
-}
-
-/* Flicker animation */
-@keyframes neon-flicker {
-    0%, 100% {
-        text-shadow: 0 0 10px #077b32, 0 0 20px #077b32, 0 0 30px #077b32, 0 0 40px #077b32;
-    }
-    50% {
-        text-shadow: 0 0 5px #077b32, 0 0 10px #077b32, 0 0 15px #077b32, 0 0 20px #077b32;
-    }
-}
-
 }
