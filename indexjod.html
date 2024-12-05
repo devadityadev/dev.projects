@@ -1,87 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>login/signin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="">
-            </div>
-            <div class="other">
-                <div class="links">
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000"><a href="">Home</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="">Shop</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="">Sale</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="">Contact</a></div>
-                </div>
-                <div class="icons">
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><i class="fa-solid fa-bag-shopping"></i></div>
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <div class="links">
-                <div class="link"><a href="">Home</a></div>
-                <div class="link"><a href="">Shop</a></div>
-                <div class="link"><a href="">Sale</a></div>
-                <div class="link"><a href="">Contact</a></div>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
-    </nav>
-    <section>
-        <div class="image" data-aos="zoom-in-right" data-aos-duration="2000">
-            <img src="main.png" alt="">
-        </div>
-        <div class="content">
-            <h2 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">Nike</h2>
-            <h1 data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="900">Air Max <span>2090</span></h1>
-            <hr class="fir-line" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
-            <hr class="sec-line" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">
-            <p data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="1200">Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of th eiconic Air Max 90. Brand-new NIke Air cushioning underfood adds unparalleled comfort while transparent mesh and vibrantly coloured details on teh upper are blended with timeless OG features for an edgy, modernised look.</p>
-            <div class="btn" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="1300"><button>Know More</button></div>
-            <div class="other-shoes">
-                <div class="shoes" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1500">
-                    <img src="main.png" alt="">
-                    <label for="">Jordan Max 200</label>
-                </div>
-                <div class="shoes" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1600">
-                    <img src="shoes1.png" alt="">
-                    <label for="">Jordan Air Zoom Super Rep</label>
-                </div>
-                <div class="shoes" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1700">
-                    <img src="shoes2.png" alt="">
-                    <label for="">Jordan Max Super Rep</label>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:1});
-    </script>
-    <script>
-        function hamburg(){
-            const navbar = document.querySelector(".dropdown");
-            navbar.style.transform = "translateY(0px)"
-        }
-
-        function cancel(){
-            const navbar = document.querySelector(".dropdown");
-            navbar.style.transform = "translateY(-500px)"
-        }
-
-
-    </script>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
 </body>
 </html>
