@@ -22,6 +22,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
     }
 
     /* Login Container */
@@ -33,6 +34,7 @@
       padding: 20px;
       width: 300px;
       text-align: center;
+      margin-bottom: 20px;
     }
 
     .login-container h1 {
@@ -84,12 +86,24 @@
     button:hover {
       background: #43a047; /* Darker green on hover */
     }
+
+    /* Image Styling */
+    .hidden-image {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .hidden-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>
   <div class="login-container">
     <h1>Login</h1>
-    <form action="#" method="POST">
+    <form id="login-form">
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
@@ -101,5 +115,21 @@
       <button type="submit">Login</button>
     </form>
   </div>
+
+  <!-- Hidden Image Section -->
+  <div class="hidden-image" id="hidden-image">
+    <img src="success.jpg" alt="Success Image">
+  </div>
+
+  <script>
+    // JavaScript to handle form submission and display the image
+    const form = document.getElementById('login-form');
+    const hiddenImage = document.getElementById('hidden-image');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+      hiddenImage.style.display = 'block'; // Show the hidden image
+    });
+  </script>
 </body>
 </html>
