@@ -10,7 +10,7 @@ function cancel(){
 const texts = [
     "DEVELOPER",
     "SECURITY",
-    "SHEILD"
+    "SHEILD"  
 ]
 let speed  =100;
 const textElements = document.querySelector(".typewriter-text");
