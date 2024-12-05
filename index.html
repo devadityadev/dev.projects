@@ -1,132 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sristi pdb- Your Digital Bodyguard</title>
-  <style>
-    /* CSS Styling */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #121212, #282828);
-      color: #f1f1f1;
-    }
-    header {
-      background: #1f2937;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-    header h1 {
-      margin: 0;
-      color: #fbbf24;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-      color: #9ca3af;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
-    }
-    nav a {
-      color: #fbbf24;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #34d399;
-    }
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-    section h2 {
-      margin-bottom: 20px;
-      color: #34d399;
-    }
-    .features {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .feature {
-      background: #1f2937;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      text-align: left;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    }
-    .feature h3 {
-      color: #fbbf24;
-    }
-    footer {
-      background: #1f2937;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-      color: #9ca3af;
-    }
-    footer a {
-      color: #34d399;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>sristi</title>
 </head>
 <body>
-  <header>
-    <h1>Sristi pds. AI</h1>
-    <p>Your Personal Digital Shield</p>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#how-it-works">How It Works</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="features">
-    <h2>Why Choose sristi.pds AI?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>AI-Powered Defense</h3>
-        <p>Advanced AI monitors and analyzes threats in real time, offering proactive security.</p>
-      </div>
-      <div class="feature">
-        <h3>Blockchain Security</h3>
-        <p>Leverage blockchain technology for secure, tamper-proof data handling.</p>
-      </div>
-      <div class="feature">
-        <h3>Behavioral Analysis</h3>
-        <p>Real-time tracking of digital activity to detect and prevent malicious behavior.</p>
-      </div>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                sristi <span>pdb</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">specs</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
-  </section>
-
-  <section id="how-it-works">
-    <h2>How It Works</h2>
-    <p>CyberShield AI combines AI, blockchain, and behavioral analysis to create a secure digital environment. Our platform educates users, defends against threats and ensures peace of mind.</p>
-  </section>
-
-  <footer id="contact">
-    <p>Contact us at <a href="mailto:support@cybershield.ai">support@cybershield.ai</a></p>
-    <p>&copy; 2024 CyberShield AI. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // JavaScript Interactivity
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', event => {
-        event.preventDefault();
-        const targetId = event.target.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="main.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>sristi</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">the all tym solution for tech security.</p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>enter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
